@@ -9,7 +9,6 @@ from peft import LoraConfig, get_peft_model
 # LOAD MODEL
 model = AutoModelForCausalLM.from_pretrained(
     "bigscience/bloom-7b1", 
-    load_in_8bit=True, 
     device_map='auto',
 )
 
