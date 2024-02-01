@@ -2,7 +2,7 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"]="0"
 import torch
 import torch.nn as nn
-import bitsandbytes as bnb
+#import bitsandbytes as bnb
 from transformers import AutoTokenizer, AutoConfig, AutoModelForCausalLM
 from peft import LoraConfig, get_peft_model
 from torch.utils.data import Dataset, DataLoader
