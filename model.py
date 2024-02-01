@@ -17,7 +17,7 @@ from torch.utils.tensorboard import SummaryWriter
 model = AutoModelForCausalLM.from_pretrained(
     "bigscience/bloom-7b1",
     device_map='auto',
-    load_in_8bit=False
+    #load_in_8bit=False
 )
 
 tokenizer = AutoTokenizer.from_pretrained("bigscience/bloom-7b1")
@@ -39,7 +39,7 @@ model.lm_head = CastOutputToFloat(model.lm_head)
 
 
 
-# SETUP LoRa Adapters
+# SETUP LoRa ADAPTERS
 def print_trainable_parameters(model):
     """
     Prints the number of trainable parameters in the model.
@@ -135,8 +135,6 @@ class ArxivDataset(Dataset):
         return sample
     
 # TRAINING
-
-
 device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
 train_dataset = ArxivDataset(tsv_file="arxiv-beir-cs-ml-generated-queries/gen-3-qrels/train.tsv",
