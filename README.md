@@ -1,4 +1,4 @@
-# Project Title: GPT-neo-x 20B Fine-tuning & RAG Deployment
+# GPT-neo-x 20B Fine-tuning & RAG Deployment
 
 ## Overview
 This project focuses on fine-tuning the GPT-neo-x model with 20B parameters using the arxiv-cs-ml Hugging Face dataset. Additionally, it implements QLoRA to significantly reduce the number of trainable parameters to 0.08%, enabling faster training within a Colab environment. Furthermore, RAG (Retrieval-Augmented Generation) with cosine-similarity retrieval has been deployed to optimize model outputs and minimize hallucination.
