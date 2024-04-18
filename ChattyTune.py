@@ -2,7 +2,7 @@ import requests
 import tkinter as tk
 
 class LLM_API():
-    def __init__(self,ngrokURL) -> None:
+    def __init__(self,ngrokURL:str='https://3482-35-185-209-85.ngrok-free.app') -> None:
         self.ngrokURL = ngrokURL
         pass
 
