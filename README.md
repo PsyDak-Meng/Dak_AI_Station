@@ -6,7 +6,7 @@ Additionally, it implements QLoRA to significantly reduce the number of trainabl
 RAG (Retrieval-Augmented Generation) with cosine-similarity retrieval has been deployed to optimize model outputs and minimize hallucination. <br><br>
 Lastly,  the LLM is enabled on a public url API via Ngrok.<br>
 <br>
-[![Watch the video](https://github.com/PsyDak-Meng/ChattyTune-Personalized-LLM-API/blob/master/chattytune.png)](https://github.com/PsyDak-Meng/ChattyTune-Personalized-LLM-API/blob/master/Chatbot%20Page%202024-04-18%2013-32-37.mp4)
+[![Watch the video](https://github.com/PsyDak-Meng/ChattyTune-Personalized-LLM-API/blob/master/chattytune.png)](https://youtu.be/crZ-whDV4eI)
 
 ## Features
 - Fine-tuned GPT-neo-x 20 B model on <code style="color : name_color">Hugging Face</code> with <code style="color : name_color">**QLoRA**</code>, reducing trainable parameters to 0.08%, facilitating faster training in <code style="color : name_color">4-bits quantization</code>.
