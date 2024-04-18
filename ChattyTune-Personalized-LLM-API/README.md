@@ -5,7 +5,9 @@ This project focuses on fine-tuning the GPT-neo-x model with 20B parameters usin
 Additionally, it implements QLoRA to significantly reduce the number of trainable parameters to 0.08%, enabling faster training within a Colab environment under 4-bits quantization. <br><br>
 RAG (Retrieval-Augmented Generation) with cosine-similarity retrieval has been deployed to optimize model outputs and minimize hallucination. <br><br>
 Lastly,  the LLM is enabled on a public url API via Ngrok.<br>
-<br>
+<br><br>
+
+(UI:)<br>
 [![Watch the video](https://github.com/PsyDak-Meng/ChattyTune-Personalized-LLM-API/blob/master/ChattyTune-Personalized-LLM-API/chattytune.png)](https://youtu.be/crZ-whDV4eI)
 
 ## Features
