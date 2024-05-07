@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC 10-K Filing Analysis</title>
+</head>
+<body>
+    <!-- JavaScript for loading -->
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function(event) {
+            document.getElementById('loadingOverlay').style.display = 'block';
+        });
+    </script>
+
+
+    <h1>SEC 10-K Filing Text Analysis</h1>
+    <div id="ticker-list">
+        <h3>Available Tickers:</h3>
+        <ul>
+            <li>AAPL - Apple</li>
+            <li>MSFT - Microsoft</li>
+            <li>GOOGL - Alphabet</li>
+            <li>AMZN - Amazon</li>
+            <li>TSLA - Tesla</li>
+        </ul>
+    </div>
+
+   <!-- Loading animation -->
+   <div id="loadingOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: rgb(39, 27, 27);">
+        Loading...
+    </div>
+</div>
+
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        {{ form.ticker.label }} {{ form.ticker(size=10) }}
+        {{ form.submit }}
+    </form>
+
+
+</body>
+</html>
